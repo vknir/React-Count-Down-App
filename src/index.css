@@ -1,0 +1,111 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/** CSS Reset Over **/
+
+/* Styling body */
+body{
+    background-color: #161F2F;
+    color: white;
+    font-family: sans-serif;
+}
+
+.card{
+    background-color: #1E293B;
+
+    padding: 20px;
+
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    gap:1rem;
+}
+
+.card > .card__time-wrapper{
+    display: flex;
+    justify-content: center;
+    
+    font-size: 2rem;
+}
+
+.card__time-wrapper > .card__time > input{
+    width: 60px;
+    height: 3rem;
+    padding: 10px;
+}
+
+.card__button-wrapper{
+
+    display: flex;
+    gap:1rem;
+
+    justify-content: center;
+}
+
+.card__button-wrapper > button{
+    background-color: #4B5563;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding-inline: 10%;
+    padding-block: 5%;
+}
